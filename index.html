@@ -1,0 +1,242 @@
+﻿
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه خانه مدرن</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Tahoma, Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #16324f;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 65px 20px;
+            background: linear-gradient(135deg, #dbeafe, #eff6ff);
+        }
+
+        .hero h2 {
+            font-size: 30px;
+            color: #16324f;
+        }
+
+        .hero p {
+            font-size: 17px;
+            line-height: 2;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #f59e0b;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 12px;
+        }
+
+        .products {
+            padding: 40px 8%;
+            text-align: center;
+        }
+
+        .products h2 {
+            margin-bottom: 30px;
+        }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .product {
+            background-color: white;
+            padding: 22px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #00000010;
+            transition: transform 0.2s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product .emoji {
+            font-size: 65px;
+        }
+
+        .product h3 {
+            color: #16324f;
+        }
+
+        .price {
+            color: #16803c;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .buy-button {
+            display: inline-block;
+            background-color: #16324f;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+
+        .about {
+            background-color: #e8eef5;
+            padding: 35px 8%;
+            text-align: center;
+            line-height: 2;
+        }
+
+        footer {
+            background-color: #16324f;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            line-height: 2;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .hero h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- سربرگ سایت -->
+    <header>
+        <h1>🏠 خانه مدرن</h1>
+
+        <nav>
+            <a href="#home">صفحه اصلی</a>
+            <a href="#products">محصولات</a>
+            <a href="#about">درباره ما</a>
+            <a href="#contact">تماس با ما</a>
+        </nav>
+    </header>
+
+    <!-- بخش معرفی -->
+    <section class="hero" id="home">
+        <h2>به فروشگاه خانه مدرن خوش آمدید!</h2>
+        <p>
+            بهترین لوازم خانگی با کیفیت عالی و قیمت مناسب
+            <br>
+            زیبایی و آسایش را به خانه خود بیاورید.
+        </p>
+        <a href="#products" class="button">مشاهده محصولات</a>
+    </section>
+
+    <!-- محصولات فروشگاه -->
+    <section class="products" id="products">
+        <h2>محصولات پرفروش ما</h2>
+
+        <div class="product-list">
+
+            <div class="product">
+                <div class="emoji">🧊</div>
+                <h3>یخچال فریزر</h3>
+                <p>کم‌مصرف و جادار، مناسب خانه شما</p>
+                <p class="price">۴۵,۰۰۰,۰۰۰ تومان</p>
+                <a href="#contact" class="buy-button">ثبت سفارش</a>
+            </div>
+
+            <div class="product">
+                <div class="emoji">🧺</div>
+                <h3>ماشین لباسشویی</h3>
+                <p>شست‌وشوی آسان با مصرف انرژی مناسب</p>
+                <p class="price">۲۸,۰۰۰,۰۰۰ تومان</p>
+                <a href="#contact" class="buy-button">ثبت سفارش</a>
+            </div>
+
+            <div class="product">
+                <div class="emoji">📺</div>
+                <h3>تلویزیون هوشمند</h3>
+                <p>تصویر باکیفیت و امکانات هوشمند</p>
+                <p class="price">۳۲,۰۰۰,۰۰۰ تومان</p>
+                <a href="#contact" class="buy-button">ثبت سفارش</a>
+            </div>
+
+            <div class="product">
+                <div class="emoji">🍽️</div>
+                <h3>ماشین ظرفشویی</h3>
+                <p>ظرف‌های تمیز با شست‌وشوی آسان</p>
+                <p class="price">۲۵,۰۰۰,۰۰۰ تومان</p>
+                <a href="#contact" class="buy-button">ثبت سفارش</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- درباره فروشگاه -->
+    <section class="about" id="about">
+        <h2>چرا خانه مدرن؟</h2>
+        <p>
+            ما تلاش می‌کنیم لوازم خانگی باکیفیت را با قیمت مناسب
+            و خدمات مطلوب در اختیار شما قرار دهیم.
+            هدف ما خریدی آسان و رضایت‌بخش برای شماست.
+        </p>
+    </section>
+
+    <!-- اطلاعات تماس -->
+    <footer id="contact">
+        <h3>ارتباط با ما</h3>
+        <p>📞 تلفن: ۰۲۱-۱۲۳۴۵۶۷۸</p>
+        <p>📍 آدرس: تهران، خیابان نمونه، پلاک ۱۰</p>
+        <p>© تمامی حقوق برای فروشگاه خانه مدرن محفوظ است.</p>
+    </footer>
+
+</body>
+</html>
